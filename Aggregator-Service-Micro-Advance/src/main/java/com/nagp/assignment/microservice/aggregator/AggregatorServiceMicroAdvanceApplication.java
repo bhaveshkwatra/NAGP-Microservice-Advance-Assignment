@@ -9,5 +9,4 @@ public class AggregatorServiceMicroAdvanceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AggregatorServiceMicroAdvanceApplication.class, args);
 	}
-
 }
