@@ -12,7 +12,9 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
-    show-sql: true  application:    name: user-service
+    show-sql: true
+  application:
+    name: user-service
     
 opentracing:
   jaeger:
