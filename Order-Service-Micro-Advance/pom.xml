@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.nagp.assignment.microservice.order</groupId>
 	<artifactId>Order-Service-Micro-Advance</artifactId>
-	<version>1.0.0-RELEASE</version>
+	<version>1.0.1-RELEASE</version>
 	<name>Order-Service-Micro-Advance</name>
 	<description>Order Service</description>
 
@@ -27,6 +27,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.opentracing.contrib</groupId>
+		    <artifactId>opentracing-spring-jaeger-web-starter</artifactId>
+		    <version>2.0.3</version>
 		</dependency>
 
 		<dependency>

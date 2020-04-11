@@ -17,7 +17,7 @@ public class UserController {
 	private UserService userService;
 	
 	@GetMapping("/{userid}")
-	public User readUserDetails(@PathVariable final String userid) {
+	public User readUserDetails(@PathVariable final Long userid) {
 		return userService.getUserDetailById(userid);
 	}
 

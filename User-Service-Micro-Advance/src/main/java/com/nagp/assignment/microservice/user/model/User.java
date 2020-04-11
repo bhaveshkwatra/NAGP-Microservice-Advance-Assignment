@@ -1,17 +1,28 @@
 package com.nagp.assignment.microservice.user.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class User {
 	
-	private String userId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long userId;
 	private String name;
 	private Integer age;
 	private String emailId;
 	
-	public String getUserId() {
+	public User() {
+	}
+	
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 	

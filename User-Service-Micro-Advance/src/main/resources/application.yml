@@ -1,0 +1,21 @@
+server:
+  port: 8056
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:mysql://${DB_HOSTNAME:localhost}:${DB_PORT:3307}/${DB_NAME:userdetail}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true  application:    name: user-service
+    
+opentracing:
+  jaeger:
+    udp-sender:
+      host: ${JAEGER_HOST:localhost}
+      port: ${JAEGER_PORT:6831}   

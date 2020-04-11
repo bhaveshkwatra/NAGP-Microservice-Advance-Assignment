@@ -1,0 +1,8 @@
+server:
+  port: 8055
+opentracing:
+  jaeger:
+    udp-sender:
+     host: ${JAEGER_HOST:localhost}
+     port: ${JAEGER_PORT:6831}
+spring:  application:    name: aggregator-service

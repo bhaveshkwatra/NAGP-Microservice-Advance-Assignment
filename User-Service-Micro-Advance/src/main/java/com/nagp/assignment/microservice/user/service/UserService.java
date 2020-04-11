@@ -4,5 +4,5 @@ import com.nagp.assignment.microservice.user.model.User;
 
 public interface UserService {
 	
-	User getUserDetailById(String userId);
+	User getUserDetailById(Long userId);
 }
